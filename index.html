@@ -29,10 +29,12 @@
         <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
             <div class="container">
                 <a href="index.html" class="navbar-brand"><img src="img/logo.png" alt></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+
+                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                     aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="lni-menu"></i>
-                </button>
+                </button> -->
+                
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto w-100 justify-content-end">
                         <li class="nav-item">
@@ -69,10 +71,12 @@
                             Whether you're looking to lose weight, gain muscle, or simply eat healthier, 
                             DietSculpt provides you with the tools, recipes, and support you need to succeed. 
                             Start your journey today with a plan that's as unique as you are!</p>
-                        <div class="header-button">
-                            <a href="#" class="btn btn-border-filled">Learn More</a>
-                            <a href="#" class="btn btn-border">Get Started</a>
-                        </div>
+                        
+                            <div class="header-button">
+                                <div class="btn btn-border-filled">
+                                    <a class="nav-link page-scroll" href="#app-features">Learn More</a>
+                                </div>
+                            </div>
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-12 col-xs-12">
@@ -527,16 +531,12 @@
                             <h2>Free</h2>
                             <ul>
                                 <li>Free Installation</li>
-                                <li>2 GB Storage</li>
-                                <li>Single User</li>
-                                <li>Sales Dashboard</li>
+                                <li>Single Meal Plan</li>
+                                <li>Default Dashboard</li>
                                 <li>Minimal Features</li>
-                                <li>1000 Logs</li>
+                                <li>100 Daily Post</li>
                             </ul>
                             <div class="price">$0<span>/mo</span></div>
-                        </div>
-                        <div class="plan-button">
-                            <a href="#" class="btn btn-border">Get Started</a>
                         </div>
                     </div>
                 </div>
@@ -549,16 +549,12 @@
                             <h2>Standard</h2>
                             <ul>
                                 <li>Free Installation</li>
-                                <li>10 GB Hosting</li>
-                                <li>5 Users</li>
-                                <li>Sales Dashboard</li>
+                                <li>5 Mean Plans</li>
+                                <li>Personalise Dashboard</li>
                                 <li>Premium Features</li>
-                                <li>50,000 Logs</li>
+                                <li>1000 Daily Post</li>
                             </ul>
                             <div class="price">$99 <span>/mo</span></div>
-                        </div>
-                        <div class="plan-button">
-                            <a href="#" class="btn btn-border">Get Started</a>
                         </div>
                     </div>
                 </div>
@@ -571,16 +567,12 @@
                             <h2>Business</h2>
                             <ul>
                                 <li>Free Installation</li>
-                                <li>50 GB Hosting</li>
-                                <li>Unlimited Users</li>
-                                <li>Sales and Marketing Dashbaord</li>
+                                <li>Unlimited Meal Plan</li>
+                                <li>Sales and Marketing Dashboard</li>
                                 <li>Premium Features</li>
-                                <li>Unlimited Logs</li>
+                                <li>Unlimited Post</li>
                             </ul>
                             <div class="price">$199 <span>/mo</span></div>
-                        </div>
-                        <div class="plan-button">
-                            <a href="#" class="btn btn-border">Get Started</a>
                         </div>
                     </div>
                 </div>
@@ -602,8 +594,7 @@
                         <div>
                             <div class="download-text">
                                 <h4>Download Our App From Store</h4>
-                                <p>Appropriately implement one-to-one catalysts for change vis-a-vis wireless catalysts
-                                    for change. Enthusiastically architect adaptive.</p>
+                                <p>Start your diet journey today with a plan that's as unique as you are!</p>
                             </div>
                             <a href="#" class="btn btn-common btn-effect"><i class="lni-android"></i> From  PlayStore<br></a>
                             <a href="#" class="btn btn-apple"><i class="lni-apple"></i> From AppStore<br></a>
@@ -622,9 +613,7 @@
                     <div class="subscribe-form">
                         <div class="form-wrapper">
                             <div class="sub-title text-center">
-                                <h3>Subscribe For More Features</h3>
-                                <p>Appropriately implement one-to-one catalysts for change vis-a-vis wireless catalysts
-                                    for change. Enthusiastically architect adaptive.</p>
+                                <h3>Subscribe For More News</h3>
                             </div>
                             <form>
                                 <div class="row">
@@ -632,7 +621,10 @@
                                         <div class="form-group form-search">
                                             <input type="email" class="form-control" name="email"
                                                 placeholder="Enter Your Email">
-                                            <button type="submit" class="btn btn-common btn-search">Subscribe</button>
+                                            <!-- <button type="submit" class="btn btn-common btn-search">Subscribe</button> -->
+                                            
+                                            <button onclick="subscribe()" type="submit" class="btn btn-common btn-search">Subscribe</button>
+                                            <div id="snackbar">Thank You for Subscribing!</div>
                                         </div>
                                     </div>
                                 </div>
@@ -775,9 +767,9 @@
                                                 <div class="help-block with-errors"></div>
                                             </div>
                                             <div class="submit-button">
-                                                <button class="btn btn-common btn-effect" id="submit"
-                                                    type="submit">Submit</button>
-                                                <div id="msgSubmit" class="h3 hidden"></div>
+                                                <a class="btn btn-common btn-effect" href="mailto:fyp.24.s3.16p@gmail.com">Submit</a>
+                                                <div id="msgSubmit" class="h3 hidden">
+                                                </div>
                                                 <div class="clearfix"></div>
                                             </div>
                                         </div>
@@ -800,8 +792,9 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
                         <img src="img/logo.png" alt>
                         <div class="textwidget">
-                            <p>Appropriately implement one-to-one catalysts for change vis-a-vis wireless catalysts for
-                                change. Enthusiastically architect adaptive.</p>
+                            <p> Take the first step towards a healthier, happier you. 
+                                Explore personalized nutrition, connect with like-minded individuals, and make lasting changes with DietSculpt. 
+                                Your journey to better health starts here!</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
@@ -844,9 +837,9 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="site-info float-left">
-                                <p>&copy; 2020 - Designed by <a href="http://uideck.com" rel="nofollow">UIdeck</a></p>
-                            </div>
+                            <!-- <div class="site-info float-left">
+                                <p>&copy; 2024 - Designed by <a href="http://uideck.com" rel="nofollow">UIdeck</a></p>
+                            </div> -->
                             <div class="float-right">
                                 <ul class="footer-social">
                                     <li><a class="facebook" href="#"><i class="lni-facebook-filled"></i></a></li>
